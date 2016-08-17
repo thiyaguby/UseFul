@@ -1,0 +1,2 @@
+1.To find and report all C language source code files starting at the current directory, enter:
+  find . -name \*.c -print
