@@ -1,2 +1,10 @@
 1.To find and report all C language source code files starting at the current directory, enter:
   find . -name \*.c -print
+  
+2.To copy only directory structure(without files)
+
+find . -type d >dirs.txt
+to create the list of directories, then
+
+xargs mkdir -p <dirs.txt
+to create the directories on the destination.
