@@ -1,4 +1,4 @@
-To Restart DB Instance:
+**To Restart DB Instance:**
 
 C:\Users\Thiyagu>sqlplus sys as sysdba
 
@@ -24,7 +24,7 @@ Database Buffers         1744830464 bytes
 Redo Buffers               19582976 bytes
 Database mounted.
 
-To Check the status of plugable Database:
+**To Check the status of plugable Database:**
 
 sqlplus sys@Plugable_Databasename as sysdba
 then check the status of the db and startup
