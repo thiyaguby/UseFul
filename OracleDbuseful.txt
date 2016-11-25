@@ -1,22 +1,14 @@
-To Restart the db instance:
+To Restart DB Instance:
 
 C:\Users\Thiyagu>sqlplus sys as sysdba
 
-SQL*Plus: Release 12.1.0.1.0 Production on Fri Nov 25 20:52:50 2016
-
-Copyright (c) 1982, 2013, Oracle.  All rights reserved.
-
-Enter password:
-
-Connected to:
-Oracle Database 12c Enterprise Edition Release 12.1.0.1.0 - 64bit Production
-With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options
+Check the DB state:
 
 SQL> select status from v$instance;
 
 STATUS
 ------------
-OPEN
+OPEN -- Means already opened
 
 SQL> shutdown immediate;
 Database closed.
@@ -31,3 +23,8 @@ Variable Size             721423024 bytes
 Database Buffers         1744830464 bytes
 Redo Buffers               19582976 bytes
 Database mounted.
+
+To Check the status of plugable Database:
+
+sqlplus sys@Plugable_Databasename as sysdba
+then check the status of the db and startup
