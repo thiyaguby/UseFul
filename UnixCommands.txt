@@ -1,5 +1,6 @@
 1.To find and report all C language source code files starting at the current directory, enter:
   find . -name \*.c -print
+  ----------------------------------------------------------------------------------------------
   
 2.To copy only directory structure(without files)
 
@@ -8,17 +9,27 @@ to create the list of directories, then
 
 xargs mkdir -p <dirs.txt
 to create the directories on the destination.
-
+  ----------------------------------------------------------------------------------------------
+  
 3. Check encoding and language:
 
 $ echo $LC_CTYPE
 ISO-8859-1
 $ echo $LANG
 pt_BR
-Get all languages:
-
+  ----------------------------------------------------------------------------------------------
+  
+4 . Get all languages:
 $ locale -a
-Change to pt_PT.utf8:
+  ----------------------------------------------------------------------------------------------
+  
+5.Change to pt_PT.utf8:
 
 $ export LC_ALL=pt_PT.utf8 
 $ export LANG="$LC_ALL"
+  ----------------------------------------------------------------------------------------------
+  
+6. Locate a file inside jar/ ear
+
+locate "/.*jar" | grep Hello.class
+  ----------------------------------------------------------------------------------------------
