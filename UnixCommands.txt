@@ -33,3 +33,12 @@ $ export LANG="$LC_ALL"
 
 locate "/.*jar" | grep Hello.class
   ----------------------------------------------------------------------------------------------
+  
+  7. To Extract a file from jar/war/ear
+  
+  jar xvf myjar.jar /path/filename
+  
+  To update a file inside jar/war/ear
+  
+  jar uvf myjar.jar /path/filename
+    ----------------------------------------------------------------------------------------------
