@@ -42,3 +42,6 @@ locate "/.*jar" | grep Hello.class
   
   jar uvf myjar.jar /path/filename
     ----------------------------------------------------------------------------------------------
+  8. To find a files which has certain text 
+  grep -r -H "oracle.apps.hcm.common.core.HcmCountryCC" /scratch/tyuvaraj/view_storage/tyuvaraj_R12_LOCAL/
+    ----------------------------------------------------------------------------------------------
