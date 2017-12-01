@@ -34,14 +34,20 @@ $ export LANG="$LC_ALL"
 locate "/.*jar" | grep Hello.class
   ----------------------------------------------------------------------------------------------
   
-  7. To Extract a file from jar/war/ear
+7. To Extract a file from jar/war/ear
   
   jar xvf myjar.jar /path/filename
   
   To update a file inside jar/war/ear
   
   jar uvf myjar.jar /path/filename
-    ----------------------------------------------------------------------------------------------
-  8. To find a files which has certain text 
+   ----------------------------------------------------------------------------------------------
+8. To find a files which has certain text 
   grep -r -H "oracle.apps.hcm.common.core.HcmCountryCC" /scratch/tyuvaraj/view_storage/tyuvaraj_R12_LOCAL/
-    ----------------------------------------------------------------------------------------------
+   ----------------------------------------------------------------------------------------------
+9. To find the contents of jar
+
+jar tf AdfHcmCareerDevelopmentCorePublicUiFuse.jar
+  ----------------------------------------------------------------------------------------------
+    
+
